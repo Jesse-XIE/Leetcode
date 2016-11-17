@@ -1,0 +1,14 @@
+/**/ _ate.cbs.rcb_9pkx0({
+   "og_object": {
+      "id": "930098473689687",
+      "description": "Given a linked list, remove the nth node from the end of list and return its head.\r\n\r\n\r\nFor example,\r\n\r\n\r\n   Given linked list: 1->2->3->4->5, and n = 2.\r\n\r\n   After removing the second node from the end, the linked list becomes 1->2->3->5.\r\n\r\n\r\n\r\nNote:\r\nGiven n will always be valid.\r\nTry to do this in one pass.",
+      "title": "Remove Nth Node From End of List | LeetCode OJ",
+      "type": "website",
+      "updated_time": "2016-10-18T01:43:01+0000"
+   },
+   "share": {
+      "comment_count": 0,
+      "share_count": 19
+   },
+   "id": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+});

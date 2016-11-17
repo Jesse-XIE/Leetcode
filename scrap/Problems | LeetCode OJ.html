@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
+    <meta charset="utf-8"><script type="text/javascript" src="Problems%20%7C%20LeetCode%20OJ_files/8d5fb92f6e"></script><script src="Problems%20%7C%20LeetCode%20OJ_files/iubenda.js"></script><script src="Problems%20%7C%20LeetCode%20OJ_files/nr-974.js"></script><script async="" src="Problems%20%7C%20LeetCode%20OJ_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"8d5fb92f6e","agent":"","transactionName":"ZwMAYEdSCktRWxZRXV5JJEFbUBBRX1ZNW11dCw1aG1AFW1hdPU1GWQoRDlRDFFRJZwFZUVgD","applicationID":"2098939","errorBeacon":"bam.nr-data.net","applicationTime":74}</script>
+    <title>Problems | LeetCode OJ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LeetCode Online Judge is a platform for preparing technical coding interviews and assessing your knowledge of data structures and algorithms. Pick from our expanding library of more than 160 interview questions to solve. Use our automated tool to get real time feedback on your solution.">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="/static/images/logolarge.jpg">
+    <meta property="og:description" content="LeetCode Online Judge is a platform for preparing technical coding interviews and assessing your knowledge of data structures and algorithms. Pick from our expanding library of more than 160 interview questions to solve. Use our automated tool to get real time feedback on your solution.">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://leetcode.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://leetcode.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://leetcode.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://leetcode.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://leetcode.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://leetcode.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://leetcode.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://leetcode.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://leetcode.com/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://leetcode.com/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://leetcode.com/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://leetcode.com/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://leetcode.com/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="https://leetcode.com/favicon-192x192.png" sizes="192x192">
+    <meta name="application-name" content="LeetCode Online Judge">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+    <link href="Problems%20%7C%20LeetCode%20OJ_files/bootstrap.css" rel="stylesheet">
+    <link href="Problems%20%7C%20LeetCode%20OJ_files/font-awesome.css" rel="stylesheet">
+    <link href="Problems%20%7C%20LeetCode%20OJ_files/bootstrap-table.css" rel="stylesheet">
+    
+    <style type="text/css">.select2-container{box-sizing:border-box;display:inline-block;margin:0;position:relative;vertical-align:middle}.select2-container .select2-selection--single{box-sizing:border-box;cursor:pointer;display:block;height:28px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--single .select2-selection__rendered{display:block;padding-left:8px;padding-right:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-selection--single .select2-selection__clear{position:relative}.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered{padding-right:8px;padding-left:20px}.select2-container .select2-selection--multiple{box-sizing:border-box;cursor:pointer;display:block;min-height:32px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--multiple .select2-selection__rendered{display:inline-block;overflow:hidden;padding-left:8px;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-search--inline{float:left}.select2-container .select2-search--inline .select2-search__field{box-sizing:border-box;border:0;font-size:100%;margin-top:5px;padding:0}.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-dropdown{background-color:white;border:1px solid #aaa;border-radius:4px;box-sizing:border-box;display:block;position:absolute;left:-100000px;width:100%;z-index:1051}.select2-results{display:block}.select2-results__options{list-style:none;margin:0;padding:0}.select2-results__option{padding:6px;user-select:none;-webkit-user-select:none}.select2-results__option[aria-selected]{cursor:pointer}.select2-container--open .select2-dropdown{left:0}.select2-container--open .select2-dropdown--above{border-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--open .select2-dropdown--below{border-top:0;border-top-left-radius:0;border-top-right-radius:0}.select2-search--dropdown{display:block;padding:4px}.select2-search--dropdown .select2-search__field{padding:4px;width:100%;box-sizing:border-box}.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-search--dropdown.select2-search--hide{display:none}.select2-close-mask{border:0;margin:0;padding:0;display:block;position:fixed;left:0;top:0;min-height:100%;min-width:100%;height:auto;width:auto;opacity:0;z-index:99;background-color:#fff;filter:alpha(opacity=0)}.select2-hidden-accessible{border:0 !important;clip:rect(0 0 0 0) !important;height:1px !important;margin:-1px !important;overflow:hidden !important;padding:0 !important;position:absolute !important;width:1px !important}.select2-container--default .select2-selection--single{background-color:#fff;border:1px solid #aaa;border-radius:4px}.select2-container--default .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--default .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold}.select2-container--default .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--default .select2-selection--single .select2-selection__arrow{height:26px;position:absolute;top:1px;right:1px;width:20px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow{left:1px;right:auto}.select2-container--default.select2-container--disabled .select2-selection--single{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear{display:none}.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--default .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text}.select2-container--default .select2-selection--multiple .select2-selection__rendered{box-sizing:border-box;list-style:none;margin:0;padding:0 5px;width:100%}.select2-container--default .select2-selection--multiple .select2-selection__rendered li{list-style:none}.select2-container--default .select2-selection--multiple .select2-selection__placeholder{color:#999;margin-top:5px;float:left}.select2-container--default .select2-selection--multiple .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-top:5px;margin-right:10px}.select2-container--default .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{color:#999;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{color:#333}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice,.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder,.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline{float:right}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice{margin-left:5px;margin-right:auto}.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--default.select2-container--focus .select2-selection--multiple{border:solid black 1px;outline:0}.select2-container--default.select2-container--disabled .select2-selection--multiple{background-color:#eee;cursor:default}.select2-container--default.select2-container--disabled .select2-selection__choice__remove{display:none}.select2-container--default.select2-container--open.select2-container--above .select2-selection--single,.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{border-top-left-radius:0;border-top-right-radius:0}.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--default .select2-search--dropdown .select2-search__field{border:1px solid #aaa}.select2-container--default .select2-search--inline .select2-search__field{background:transparent;border:0;outline:0;box-shadow:none;-webkit-appearance:textfield}.select2-container--default .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--default .select2-results__option[role=group]{padding:0}.select2-container--default .select2-results__option[aria-disabled=true]{color:#999}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#ddd}.select2-container--default .select2-results__option .select2-results__option{padding-left:1em}.select2-container--default .select2-results__option .select2-results__option .select2-results__group{padding-left:0}.select2-container--default .select2-results__option .select2-results__option .select2-results__option{margin-left:-1em;padding-left:2em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-2em;padding-left:3em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-3em;padding-left:4em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-4em;padding-left:5em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-5em;padding-left:6em}.select2-container--default .select2-results__option--highlighted[aria-selected]{background-color:#5897fb;color:white}.select2-container--default .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic .select2-selection--single{background-color:#f7f7f7;border:1px solid #aaa;border-radius:4px;outline:0;background-image:-webkit-linear-gradient(top,white 50%,#eee 100%);background-image:-o-linear-gradient(top,white 50%,#eee 100%);background-image:linear-gradient(to bottom,white 50%,#eee 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF',endColorstr='#FFEEEEEE',GradientType=0)}.select2-container--classic .select2-selection--single:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--classic .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:bold;margin-right:10px}.select2-container--classic .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--classic .select2-selection--single .select2-selection__arrow{background-color:#ddd;border:0;border-left:1px solid #aaa;border-top-right-radius:4px;border-bottom-right-radius:4px;height:26px;position:absolute;top:1px;right:1px;width:20px;background-image:-webkit-linear-gradient(top,#eee 50%,#ccc 100%);background-image:-o-linear-gradient(top,#eee 50%,#ccc 100%);background-image:linear-gradient(to bottom,#eee 50%,#ccc 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE',endColorstr='#FFCCCCCC',GradientType=0)}.select2-container--classic .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent transparent;border-style:solid;border-width:5px 4px 0 4px;height:0;left:50%;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow{border:0;border-right:1px solid #aaa;border-radius:0;border-top-left-radius:4px;border-bottom-left-radius:4px;left:1px;right:auto}.select2-container--classic.select2-container--open .select2-selection--single{border:1px solid #5897fb}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow{background:transparent;border:0}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888 transparent;border-width:0 4px 5px 4px}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single{border-top:0;border-top-left-radius:0;border-top-right-radius:0;background-image:-webkit-linear-gradient(top,white 0,#eee 50%);background-image:-o-linear-gradient(top,white 0,#eee 50%);background-image:linear-gradient(to bottom,white 0,#eee 50%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF',endColorstr='#FFEEEEEE',GradientType=0)}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single{border-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0;background-image:-webkit-linear-gradient(top,#eee 50%,white 100%);background-image:-o-linear-gradient(top,#eee 50%,white 100%);background-image:linear-gradient(to bottom,#eee 50%,white 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE',endColorstr='#FFFFFFFF',GradientType=0)}.select2-container--classic .select2-selection--multiple{background-color:white;border:1px solid #aaa;border-radius:4px;cursor:text;outline:0}.select2-container--classic .select2-selection--multiple:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--multiple .select2-selection__rendered{list-style:none;margin:0;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__clear{display:none}.select2-container--classic .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove{color:#888;cursor:pointer;display:inline-block;font-weight:bold;margin-right:2px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover{color:#555}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice{float:right}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice{margin-left:5px;margin-right:auto}.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--classic.select2-container--open .select2-selection--multiple{border:1px solid #5897fb}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple{border-top:0;border-top-left-radius:0;border-top-right-radius:0}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--classic .select2-search--dropdown .select2-search__field{border:1px solid #aaa;outline:0}.select2-container--classic .select2-search--inline .select2-search__field{outline:0;box-shadow:none}.select2-container--classic .select2-dropdown{background-color:white;border:1px solid transparent}.select2-container--classic .select2-dropdown--above{border-bottom:0}.select2-container--classic .select2-dropdown--below{border-top:0}.select2-container--classic .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--classic .select2-results__option[role=group]{padding:0}.select2-container--classic .select2-results__option[aria-disabled=true]{color:grey}.select2-container--classic .select2-results__option--highlighted[aria-selected]{background-color:#3875d7;color:white}.select2-container--classic .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic.select2-container--open .select2-dropdown{border-color:#5897fb}/*! Select2 Bootstrap Theme v0.1.0-beta.9 | MIT License | github.com/select2/select2-bootstrap-theme */.select2-container--bootstrap{display:block}.select2-container--bootstrap .select2-selection{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);background-color:#fff;border:1px solid #ccc;border-radius:4px;color:#555;font-size:14px;outline:0}.select2-container--bootstrap .select2-selection.form-control{border-radius:4px}.select2-container--bootstrap .select2-search--dropdown .select2-search__field{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);background-color:#fff;border:1px solid #ccc;border-radius:4px;color:#555;font-size:14px}.select2-container--bootstrap .select2-search__field{outline:0}.select2-container--bootstrap .select2-search__field::-webkit-input-placeholder{color:#999}.select2-container--bootstrap .select2-search__field:-moz-placeholder{color:#999}.select2-container--bootstrap .select2-search__field::-moz-placeholder{color:#999;opacity:1}.select2-container--bootstrap .select2-search__field:-ms-input-placeholder{color:#999}.select2-container--bootstrap .select2-results__option{padding:6px 12px}.select2-container--bootstrap .select2-results__option[role=group]{padding:0}.select2-container--bootstrap .select2-results__option[aria-disabled=true]{color:#777;cursor:not-allowed}.select2-container--bootstrap .select2-results__option[aria-selected=true]{background-color:#f5f5f5;color:#262626}.select2-container--bootstrap .select2-results__option--highlighted[aria-selected]{background-color:#337ab7;color:#fff}.select2-container--bootstrap .select2-results__option .select2-results__option{padding:6px 12px}.select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__group{padding-left:0}.select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__option{margin-left:-12px;padding-left:24px}.select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-24px;padding-left:36px}.select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-36px;padding-left:48px}.select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-48px;padding-left:60px}.select2-container--bootstrap .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-60px;padding-left:72px}.select2-container--bootstrap .select2-results__group{color:#777;display:block;padding:6px 12px;font-size:12px;line-height:1.42857143;white-space:nowrap}.select2-container--bootstrap.select2-container--focus .select2-selection,.select2-container--bootstrap.select2-container--open .select2-selection{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;border-color:#66afe9}.select2-container--bootstrap.select2-container--open .select2-selection .select2-selection__arrow b{border-color:transparent transparent #999 transparent;border-width:0 4px 4px 4px}.select2-container--bootstrap.select2-container--open.select2-container--below .select2-selection{border-bottom-right-radius:0;border-bottom-left-radius:0;border-bottom-color:transparent}.select2-container--bootstrap.select2-container--open.select2-container--above .select2-selection{border-top-right-radius:0;border-top-left-radius:0;border-top-color:transparent}.select2-container--bootstrap .select2-selection__clear{color:#999;cursor:pointer;float:right;font-weight:bold;margin-right:10px}.select2-container--bootstrap .select2-selection__clear:hover{color:#333}.select2-container--bootstrap.select2-container--disabled .select2-selection{border-color:#ccc;-webkit-box-shadow:none;box-shadow:none}.select2-container--bootstrap.select2-container--disabled .select2-selection,.select2-container--bootstrap.select2-container--disabled .select2-search__field{cursor:not-allowed}.select2-container--bootstrap.select2-container--disabled .select2-selection,.select2-container--bootstrap.select2-container--disabled .select2-selection--multiple .select2-selection__choice{background-color:#eee}.select2-container--bootstrap.select2-container--disabled .select2-selection__clear,.select2-container--bootstrap.select2-container--disabled .select2-selection--multiple .select2-selection__choice__remove{display:none}.select2-container--bootstrap .select2-dropdown{-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);box-shadow:0 6px 12px rgba(0,0,0,0.175);border-color:#66afe9;overflow-x:hidden;margin-top:-1px}.select2-container--bootstrap .select2-dropdown--above{-webkit-box-shadow:0 -6px 12px rgba(0,0,0,0.175);box-shadow:0 -6px 12px rgba(0,0,0,0.175);margin-top:1px}.select2-container--bootstrap .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--bootstrap .select2-selection--single{height:34px;line-height:1.42857143;padding:6px 24px 6px 12px}.select2-container--bootstrap .select2-selection--single .select2-selection__arrow{position:absolute;bottom:0;right:12px;top:0;width:4px}.select2-container--bootstrap .select2-selection--single .select2-selection__arrow b{border-color:#999 transparent transparent transparent;border-style:solid;border-width:4px 4px 0 4px;height:0;left:0;margin-left:-4px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--bootstrap .select2-selection--single .select2-selection__rendered{color:#555;padding:0}.select2-container--bootstrap .select2-selection--single .select2-selection__placeholder{color:#999}.select2-container--bootstrap .select2-selection--multiple{min-height:34px;padding:0;height:auto}.select2-container--bootstrap .select2-selection--multiple .select2-selection__rendered{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;line-height:1.42857143;list-style:none;margin:0;overflow:hidden;padding:0;width:100%;text-overflow:ellipsis;white-space:nowrap}.select2-container--bootstrap .select2-selection--multiple .select2-selection__placeholder{color:#999;float:left;margin-top:5px}.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice{color:#555;background:#fff;border:1px solid #ccc;border-radius:4px;cursor:default;float:left;margin:5px 0 0 6px;padding:0 6px}.select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field{background:transparent;padding:0 12px;height:32px;line-height:1.42857143;margin-top:0;min-width:5em}.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove{color:#999;cursor:pointer;display:inline-block;font-weight:bold;margin-right:3px}.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice__remove:hover{color:#333}.select2-container--bootstrap .select2-selection--multiple .select2-selection__clear{margin-top:6px}.select2-container--bootstrap .select2-selection--single.input-sm,.input-group-sm .select2-container--bootstrap .select2-selection--single,.form-group-sm .select2-container--bootstrap .select2-selection--single{border-radius:3px;font-size:12px;height:30px;line-height:1.5;padding:5px 22px 5px 10px}.select2-container--bootstrap .select2-selection--single.input-sm .select2-selection__arrow b,.input-group-sm .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b,.form-group-sm .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b{margin-left:-5px}.select2-container--bootstrap .select2-selection--multiple.input-sm,.input-group-sm .select2-container--bootstrap .select2-selection--multiple,.form-group-sm .select2-container--bootstrap .select2-selection--multiple{min-height:30px;border-radius:3px}.select2-container--bootstrap .select2-selection--multiple.input-sm .select2-selection__choice,.input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,.form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice{font-size:12px;line-height:1.5;margin:4px 0 0 5px;padding:0 5px}.select2-container--bootstrap .select2-selection--multiple.input-sm .select2-search--inline .select2-search__field,.input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,.form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field{padding:0 10px;font-size:12px;height:28px;line-height:1.5}.select2-container--bootstrap .select2-selection--multiple.input-sm .select2-selection__clear,.input-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear,.form-group-sm .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear{margin-top:5px}.select2-container--bootstrap .select2-selection--single.input-lg,.input-group-lg .select2-container--bootstrap .select2-selection--single,.form-group-lg .select2-container--bootstrap .select2-selection--single{border-radius:6px;font-size:18px;height:46px;line-height:1.3333333;padding:10px 31px 10px 16px}.select2-container--bootstrap .select2-selection--single.input-lg .select2-selection__arrow,.input-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow,.form-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow{width:5px}.select2-container--bootstrap .select2-selection--single.input-lg .select2-selection__arrow b,.input-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b,.form-group-lg .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b{border-width:5px 5px 0 5px;margin-left:-5px;margin-left:-10px;margin-top:-2.5px}.select2-container--bootstrap .select2-selection--multiple.input-lg,.input-group-lg .select2-container--bootstrap .select2-selection--multiple,.form-group-lg .select2-container--bootstrap .select2-selection--multiple{min-height:46px;border-radius:6px}.select2-container--bootstrap .select2-selection--multiple.input-lg .select2-selection__choice,.input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice,.form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice{font-size:18px;line-height:1.3333333;border-radius:4px;margin:9px 0 0 8px;padding:0 10px}.select2-container--bootstrap .select2-selection--multiple.input-lg .select2-search--inline .select2-search__field,.input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field,.form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field{padding:0 16px;font-size:18px;height:44px;line-height:1.3333333}.select2-container--bootstrap .select2-selection--multiple.input-lg .select2-selection__clear,.input-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear,.form-group-lg .select2-container--bootstrap .select2-selection--multiple .select2-selection__clear{margin-top:10px}.select2-container--bootstrap .select2-selection.input-lg.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #999 transparent;border-width:0 5px 5px 5px}.input-group-lg .select2-container--bootstrap .select2-selection.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #999 transparent;border-width:0 5px 5px 5px}.select2-container--bootstrap[dir="rtl"] .select2-selection--single{padding-left:24px;padding-right:12px}.select2-container--bootstrap[dir="rtl"] .select2-selection--single .select2-selection__rendered{padding-right:0;padding-left:0;text-align:right}.select2-container--bootstrap[dir="rtl"] .select2-selection--single .select2-selection__clear{float:left}.select2-container--bootstrap[dir="rtl"] .select2-selection--single .select2-selection__arrow{left:12px;right:auto}.select2-container--bootstrap[dir="rtl"] .select2-selection--single .select2-selection__arrow b{margin-left:0}.select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__choice,.select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder{float:right}.select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__choice{margin-left:0;margin-right:6px}.select2-container--bootstrap[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.has-warning .select2-dropdown,.has-warning .select2-selection{border-color:#8a6d3b}.has-warning .select2-container--focus .select2-selection,.has-warning .select2-container--open .select2-selection{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #c0a16b;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #c0a16b;border-color:#66512c}.has-warning.select2-drop-active{border-color:#66512c}.has-warning.select2-drop-active.select2-drop.select2-drop-above{border-top-color:#66512c}.has-error .select2-dropdown,.has-error .select2-selection{border-color:#a94442}.has-error .select2-container--focus .select2-selection,.has-error .select2-container--open .select2-selection{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483;border-color:#843534}.has-error.select2-drop-active{border-color:#843534}.has-error.select2-drop-active.select2-drop.select2-drop-above{border-top-color:#843534}.has-success .select2-dropdown,.has-success .select2-selection{border-color:#3c763d}.has-success .select2-container--focus .select2-selection,.has-success .select2-container--open .select2-selection{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #67b168;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #67b168;border-color:#2b542c}.has-success.select2-drop-active{border-color:#2b542c}.has-success.select2-drop-active.select2-drop.select2-drop-above{border-top-color:#2b542c}.input-group .select2-container--bootstrap{display:table;table-layout:fixed;position:relative;z-index:2;float:left;width:100%;margin-bottom:0}.input-group .select2-container--bootstrap.select2-container--open,.input-group .select2-container--bootstrap.select2-container--focus{z-index:3}.input-group.select2-bootstrap-prepend .select2-container--bootstrap .select2-selection{border-bottom-left-radius:0;border-top-left-radius:0}.input-group.select2-bootstrap-append .select2-container--bootstrap .select2-selection{border-bottom-right-radius:0;border-top-right-radius:0}.select2-bootstrap-append .select2-container--bootstrap,.select2-bootstrap-append .input-group-btn,.select2-bootstrap-append .input-group-btn .btn,.select2-bootstrap-prepend .select2-container--bootstrap,.select2-bootstrap-prepend .input-group-btn,.select2-bootstrap-prepend .input-group-btn .btn{vertical-align:top}.form-control.select2-hidden-accessible{position:absolute !important;width:1px !important}.form-inline .select2-container--bootstrap{display:inline-block}.last-col{overflow:hidden}.ptn,.pvn,.pan{padding-top:0 !important}.ptx,.pvx,.pax{padding-top:3px !important}.pts,.pvs,.pas{padding-top:5px !important}.ptm,.pvm,.pam{padding-top:10px !important}.ptl,.pvl,.pal{padding-top:20px !important}.pth,.pvh,.pah{padding-top:40px !important}.prn,.phn,.pan{padding-right:0 !important}.prx,.phx,.pax{padding-right:3px !important}.prs,.phs,.pas{padding-right:5px !important}.prm,.phm,.pam{padding-right:10px !important}.prl,.phl,.pal{padding-right:20px !important}.prh,.phh,.pah{padding-right:40px !important}.pbn,.pvn,.pan{padding-bottom:0 !important}.pbx,.pvx,.pax{padding-bottom:3px !important}.pbs,.pvs,.pas{padding-bottom:5px !important}.pbm,.pvm,.pam{padding-bottom:10px !important}.pbl,.pvl,.pal{padding-bottom:20px !important}.pbh,.pvh,.pah{padding-bottom:40px !important}.pln,.phn,.pan{padding-left:0 !important}.plx,.phx,.pax{padding-left:3px !important}.pls,.phs,.pas{padding-left:5px !important}.plm,.phm,.pam{padding-left:10px !important}.pll,.phl,.pal{padding-left:20px !important}.plh,.phh,.pah{padding-left:40px !important}.mtn,.mvn,.man{margin-top:0 !important}.mtx,.mvx,.max{margin-top:3px !important}.mts,.mvs,.mas{margin-top:5px !important}.mtm,.mvm,.mam{margin-top:10px !important}.mtl,.mvl,.mal{margin-top:20px !important}.mth,.mvh,.mah{margin-top:40px !important}.mrn,.mhn,.man{margin-right:0 !important}.mrx,.mhx,.max{margin-right:3px !important}.mrs,.mhs,.mas{margin-right:5px !important}.mrm,.mhm,.mam{margin-right:10px !important}.mrl,.mhl,.mal{margin-right:20px !important}.mrh,.mhh,.mah{margin-right:40px !important}.mbn,.mvn,.man{margin-bottom:0 !important}.mbx,.mvx,.max{margin-bottom:3px !important}.mbs,.mvs,.mas{margin-bottom:5px !important}.mbm,.mvm,.mam{margin-bottom:10px !important}.mbl,.mvl,.mal{margin-bottom:20px !important}.mbh,.mvh,.mah{margin-bottom:40px !important}.mln,.mhn,.man{margin-left:0 !important}.mlx,.mhx,.max{margin-left:3px !important}.mls,.mhs,.mas{margin-left:5px !important}.mlm,.mhm,.mam{margin-left:10px !important}.mll,.mhl,.mal{margin-left:20px !important}.mlh,.mhh,.mah{margin-left:40px !important}.select{position:relative;display:inline-block;vertical-align:top;min-width:220px;width:auto}.form-group .select{width:100%}.form-group .select>.select2-choice{width:100%}.select.form-control{border:0;padding:0;height:auto}.select2-container{display:inline-block}.select2-results__option{padding:12px 16px}.callout{padding:20px;margin:20px 0;border:1px solid #eee;border-left-width:5px;border-radius:3px}.callout+.callout{margin-top:-5px}.callout h4{margin-top:0;margin-bottom:8px}.callout p:last-child{margin-bottom:0}.callout code{border-radius:3px}.callout-default{border-left-color:#777}.callout-default h4{color:#777}.callout-primary{border-left-color:#428bca}.callout-primary h4{color:#428bca}.callout-success{border-left-color:#5cb85c}.callout-success h4{color:#5cb85c}.callout-danger{border-left-color:#d9534f}.callout-danger h4{color:#d9534f}.callout-warning{border-left-color:#f0ad4e}.callout-warning h4{color:#f0ad4e}.callout-info{border-left-color:#5bc0de}.callout-info h4{color:#5bc0de}.question-section{font-size:16px;margin:40px 0}.question-section img{box-sizing:border-box;margin:10px 0 20px;width:100%;box-shadow:4px 4px 10px #888}.question-section blockquote{font-size:20px;font-style:italic}.question-section p{margin-left:25px}.lower-alpha{margin:20px 0;list-style-type:lower-roman}.lower-alpha pre{margin:10px 0}.status-accepted{color:#3c763d}.favor{color:#f0ad4e}.not-favor{color:grey}.add-favor{cursor:pointer;position:relative;top:-3px}body{overflow-y:scroll}a{color:#08c}a:hover{color:#005580}.form-signin{max-width:300px;padding:19px 29px 29px;margin:0 auto 20px;background-color:#fff;border:1px solid #e5e5e5;border-radius:5px;box-shadow:0 1px 2px rgba(0,0,0,0.05)}.block-center{display:block;margin-left:auto;margin-right:auto}.message{border:1px solid #e6db55;background-color:#ffffe0;padding:15px 30px 15px 15px;margin:20px 0}.navbar-extra{border-radius:0;margin-bottom:30px}#chat-link{position:fixed;right:5px;bottom:10px;background:#fff;border:1px solid #e0e0e0;padding:5px 15px 10px;border-radius:5px 0 0 5px;box-shadow:0 1px 3px rgba(0,0,0,0.1);color:#979faf}.glyphicon-envelope{text-align:center;line-height:26px;margin-right:5px;position:relative}[ng-cloak]{display:none}.editor{font-size:14px !important;border:1px solid #e0e0e0;height:475px}.ac{display:inline-block;height:16px;width:16px;background-image:url('/static/images/correct.png?322849763bd1');background-repeat:no-repeat}.notac{display:inline-block;height:16px;width:16px;background-image:url('/static/images/question.png?322849763bd1');background-repeat:no-repeat}@media(min-width:768px){ul.nav li.dropdown:hover>ul.dropdown-menu{display:block;margin-top:0;border-top-left-radius:0;border-top-right-radius:0}}#subscribe{background-color:#373737}@media(min-width:768px){.container{position:relative}#navbar-right{position:absolute;display:inline-block;right:0}}html,body{height:100%}.content-wrapper{box-sizing:border-box;min-height:100%}.top-buffer{margin-top:20px}.ng-fade{opacity:1}.ng-fade.ng-hide{opacity:0}.ng-fade.ng-hide-remove{-webkit-animation:fadeInLeft 1s;animation:fadeInLeft 1s}.invisible{visibility:hidden}.visible{visibility:visible}.notransition{-webkit-transition:none !important;transition:none !important}a.menu-links{cursor:pointer}p.comment{color:darkgray}p.comment a{color:lightskyblue}.btn.disabled{pointer-events:auto}.form-control-inline{min-width:0;width:auto;display:inline}</style>
+    
+    
+<link rel="stylesheet" href="Problems%20%7C%20LeetCode%20OJ_files/795a080182b1.css" type="text/css">
+
+    <script src="Problems%20%7C%20LeetCode%20OJ_files/jquery.js"></script>
+    <script src="Problems%20%7C%20LeetCode%20OJ_files/angular.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/static/html5shiv/dist/html5shiv.min.js"></script>
+      <script src="/static/respond/dest/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">@keyframes rotating{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.loading{animation:rotating 1s linear infinite}</style><style type="text/css">.loading{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:24px;height:24px;font-size:24px}</style><style type="text/css">.reactable-pagination .row-selector select{margin:10px;width:80px;display:inline-block}.reactable-pagination .reactable-current-page{border-color:#337ab7}.reactable-pagination .reactable-current-page,.reactable-pagination .reactable-current-page:hover{color:#fff;cursor:default;background-color:#337ab7}.reactable-pagination .pagination-buttons{display:inline-block;margin:5px 0 5px 20px}.reactable-pagination a{padding:6px 12px;line-height:1.42857143;color:#337ab7;text-decoration:none;background-color:#fff;border:1px solid #ddd;border-right-width:0}.reactable-pagination a:hover{background-color:#eee;color:#2e5a82}.reactable-pagination a:first-child{border-top-left-radius:4px;border-bottom-left-radius:4px}.reactable-pagination a:last-child{border-top-right-radius:4px;border-bottom-right-radius:4px;border-right-width:1px}</style><style type="text/css"></style></head>
+
+  <body>
+    <div class="content-wrapper" style="padding-bottom: 136px;">
+      
+
+      <div class="navbar navbar-inverse navbar-extra">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://leetcode.com/">LeetCode OJ</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              
+              <li id="subscribe">
+                <a href="https://leetcode.com/subscribe/"><font color="orange">Subscribe</font></a>
+              </li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  Problems
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  
+                    
+                      <li><a href="https://leetcode.com/problemset/algorithms/">Algorithms</a></li>
+                    
+                  
+                    
+                      <li><a href="https://leetcode.com/problemset/database/">Database</a></li>
+                    
+                  
+                    
+                      <li><a href="https://leetcode.com/problemset/shell/">Shell</a></li>
+                    
+                  
+                    
+                      <li><a href="https://leetcode.com/problemset/draft/">Draft</a></li>
+                    
+                  
+                  <li role="separator" class="divider"></li>
+                  <li><a href="https://leetcode.com/library/application/">Add Question</a></li>
+                </ul>
+              </li>
+              
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    Mock
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="https://leetcode.com/mockinterview/">Mock Interview</a>
+                    </li>
+                    <li>
+                      <a href="https://leetcode.com/mockinterview/session/list/">Past Sessions</a>
+                    </li>
+                  </ul>
+                </li>
+              
+              
+                
+                  <li><a href="https://leetcode.com/contest/">Contest</a></li>
+                
+              
+              
+                <li id="coursesNav"><a href="https://leetcode.com/courses/">Courses</a></li>
+              
+              <li id="articlesNav"><a href="https://leetcode.com/articles/">Articles</a></li>
+              <!-- TODO: not hard code -->
+              
+              <li id=""><a href="https://discuss.leetcode.com/" target="_blank">Discuss</a></li>
+              
+              
+              <li id="bookNav" class="hidden-sm"><a onclick="ga('send', 'event', 'book', 'click', 'nav-bar');" href="https://leetcode.com/book/"><font color="#ed9c28">Book</font></a></li>
+              
+              
+              
+              
+            </ul>
+            
+            <ul id="navbar-right" class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                
+                <!--<img src="https://www.gravatar.com/avatar/9600ec192689b3aca6b5646d552fa9df?s=25" />&nbsp&nbsp-->Jesse-Xie
+                
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="https://leetcode.com/profile/">Profile</a></li>
+                
+                  <li><a href="https://leetcode.com/subscription/">My Subscription</a></li>
+                
+                <li class="divider"></li>
+                <li><a href="https://leetcode.com/submissions/">My Submissions</a></li>
+                <li><a href="https://leetcode.com/progress/">My Progress</a></li>
+                <li><a href="https://leetcode.com/session/">Manage Sessions</a></li>
+                <!-- TODO:  Dashboard  -->
+                <li><a href="https://leetcode.com/accounts/password/change/">Change Password</a></li>
+                <li class="divider"></li>
+                <li><a href="https://leetcode.com/accounts/logout/">Sign out</a></li>
+              </ul>
+              </li>
+            </ul>
+            
+            <!--
+            <form class="navbar-form pull-right">
+              <input class="col-md-2" type="text" placeholder="Email">
+              <input class="col-md-2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+            -->
+          </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+      
+
+      
+  <!-- announcement -->
+  
+    <div id="announcement" class="container">
+      <div class="row">
+        <div class="col-md-12 alert alert-info">
+          <button type="button" class="close" data-dismiss="alert">×</button>
+          <div class="text-center">
+            <div class="row"><h4>Announcement</h4></div>
+            <div class="row">This week's contest is proudly sponsored by <font color="red"><b><a href="https://www.smarking.net/" target="_blank">Smarking</a></b></font>, a <b>Y Combinator</b>-backed company.<br><br>  <b><font color="red"><a href="https://leetcode.com/contest/detail/10">Smarking Algorithm Contest</a></font></b> begins <a href="http://www.timeanddate.com/worldclock/fixedtime.html?msg=Smarking+Algorithm+Contest&amp;iso=20161022T1830&amp;p1=224&amp;ah=2&amp;am=30" target="_blank">this Saturday 6:30pm PST</a>. Get a chance to win cash prizes and land on your dream job.</div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  
+  <!-- end announcement -->
+
+  <!-- email_not_verified_alert -->
+  
+  <!-- end email_not_verified_alert -->
+
+  <!-- confirm_success_panel -->
+  <div id="cong" class="hide container">
+    <div class="row">
+      <div class="col-md-12 alert alert-success">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <div class="text-center">
+          <div class="row"><h4>CONGRATULATIONS</h4></div>
+          <div class="row">
+            <p>You have confirmed your email successfully. Please <a href="https://leetcode.com/faq/" target="_blank">read the FAQ</a> or click <a href="https://leetcode.com/profile/" target="_blank">here</a> to complete your profile.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /container -->
+  <!-- end confirm_success_panel -->
+
+<div class="container">
+
+  <a id="go-top" onclick="ga('send', 'event', 'go-top', 'click');" class="btn btn-link btn-lg" style="display: block;">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <!-- end scroll_to_top_button -->
+
+
+  <div class="row">
+    <div class="col-md-9 blog-main">
+      
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Latest Draft Questions
+            </div>
+            <div class="panel-body">
+              Latest interview questions will be published in the <a href="https://leetcode.com/problemset/draft/">draft category</a>.
+              Please feel free to take a look and give your review.
+              Once the questions have received enough submissions, we will move them to the algorithms category.
+            </div>
+            <ul class="list-group">
+              
+                <a href="https://leetcode.com/problems/minimum-genetic-mutation/" class="list-group-item">
+                  
+                  <span class="badge progress-bar-info">
+                    Twitter
+                  </span>
+                  
+                  <strong>
+                    Minimum Genetic Mutation
+                  </strong>
+                </a>
+              
+                <a href="https://leetcode.com/problems/all-oone-data-structure/" class="list-group-item">
+                  
+                  <span class="badge progress-bar-info">
+                    Uber
+                  </span>
+                  
+                  <strong>
+                    All O`one Data Structure
+                  </strong>
+                </a>
+              
+                <a href="https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/" class="list-group-item">
+                  
+                  <span class="badge progress-bar-info">
+                    Google
+                  </span>
+                  
+                  <strong>
+                    Maximum XOR of Two Numbers in an Array
+                  </strong>
+                </a>
+              
+            </ul>
+            <div class="panel-footer">
+              <a href="https://leetcode.com/problemset/draft/">
+                View more...
+              </a>
+            </div>
+          </div>
+        </div>
+
+      
+      <div class="row" id="question-app"><div data-reactroot=""><div class="row" style="margin-bottom: 15px;"><div id="welcome" class="col-sm-8 col-xs-12 header-control"><span><!-- react-text: 32 -->Welcome&nbsp;<!-- /react-text --><a href="https://leetcode.com/profile/">Jesse-Xie</a><!-- react-text: 34 -->! You have solved&nbsp;<!-- /react-text --><strong><!-- react-text: 36 -->44<!-- /react-text --><!-- react-text: 37 -->/ <!-- /react-text --><!-- react-text: 38 -->407<!-- /react-text --></strong><!-- react-text: 39 --> problems. (<!-- /react-text --><a href="https://leetcode.com/session">manage sessions</a><!-- react-text: 41 -->)<!-- /react-text --></span></div><span class="pull-right" style="margin-right: 15px;"><a class="btn btn-success btn-md btn-action" href="https://leetcode.com/problems/random-one-question/algorithms">Pick One</a></span></div><div><form class="form-horizontal"><div class="form-group"><label class="col-sm-2 control-label">Filter By</label><div class="col-sm-10"><select class="form-control"><option value="default">Choose one filter</option><option value="solved" selected="selected">Solved Problems</option><option value="unsolved">Unsolved Problems</option><option value="attempt">Attempted Problems</option><option value="favor">Favorite Problems</option><option value="has_solution">Problems with Editorial</option></select></div></div><div class="form-group"><label class="col-sm-2 control-label">Search Questions</label><div class="col-sm-10"><input class="form-control" placeholder="Search question titles or IDs" type="text"></div></div><div class="form-group"><label class="col-sm-2 control-label">Filters</label><div class="col-sm-10" style="margin-top: 5px;"><span class="label label-primary"></span><!-- react-text: 26 -->&nbsp;<!-- /react-text --><span class="label label-success">solved</span></div></div></form><div class="table-responsive"><table class="table table-striped"><thead><tr class="reactable-column-header"><th class="reactable-th-status reactable-header-sortable " role="button" tabindex="0"><strong></strong></th><th class="reactable-th-question_id reactable-header-sortable reactable-header-sort-asc" role="button" tabindex="0"><strong>#</strong></th><th class="reactable-th-question_title reactable-header-sortable " role="button" tabindex="0"><strong>Title</strong></th><th class="reactable-th-editorial reactable-header-sortable " role="button" tabindex="0"><strong>Editorial</strong></th><th class="reactable-th-acceptance reactable-header-sortable " role="button" tabindex="0"><strong>Acceptance</strong></th><th class="reactable-th-difficulty reactable-header-sortable " role="button" tabindex="0"><strong>Difficulty</strong></th><th class="reactable-th-frequency reactable-header-sortable " role="button" tabindex="0"><strong><!-- react-text: 214 -->Frequency&nbsp;<!-- /react-text --><span id="frequency-tooltip" class="fa fa-lock" data-toggle="tooltip" data-placement="left" title="" data-original-title="Only premium members can see the frequency"></span></strong></th></tr></thead><tbody class="reactable-data"><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">2</td><td value="Add Two Numbers" label="[object Object]"><div><a href="https://leetcode.com/problems/add-two-numbers">Add Two Numbers</a><!-- react-text: 224 -->&nbsp;<!-- /react-text --><!-- react-text: 225 --><!-- /react-text --><!-- react-text: 226 -->&nbsp;<!-- /react-text --><!-- react-text: 227 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/add-two-numbers"><i class="fa fa-file-text"></i></a></td><td value="25.440409724021016" label="[object Object]">25.4%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">11</td><td value="Container With Most Water" label="[object Object]"><div><a href="https://leetcode.com/problems/container-with-most-water">Container With Most Water</a><!-- react-text: 241 -->&nbsp;<!-- /react-text --><!-- react-text: 242 --><!-- /react-text --><!-- react-text: 243 -->&nbsp;<!-- /react-text --><!-- react-text: 244 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/container-most-water"><i class="fa fa-file-text"></i></a></td><td value="35.81283078243456" label="[object Object]">35.8%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">18</td><td value="4Sum" label="[object Object]"><div><a href="https://leetcode.com/problems/4sum">4Sum</a><!-- react-text: 258 -->&nbsp;<!-- /react-text --><!-- react-text: 259 --><!-- /react-text --><!-- react-text: 260 -->&nbsp;<!-- /react-text --><!-- react-text: 261 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="25.127249166771907" label="[object Object]">25.1%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">19</td><td value="Remove Nth Node From End of List" label="[object Object]"><div><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list">Remove Nth Node From End of List</a><!-- react-text: 273 -->&nbsp;<!-- /react-text --><!-- react-text: 274 --><!-- /react-text --><!-- react-text: 275 -->&nbsp;<!-- /react-text --><!-- react-text: 276 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/remove-nth-node-end-list"><i class="fa fa-file-text"></i></a></td><td value="31.511898793901683" label="[object Object]">31.5%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">20</td><td value="Valid Parentheses" label="[object Object]"><div><a href="https://leetcode.com/problems/valid-parentheses">Valid Parentheses</a><!-- react-text: 290 -->&nbsp;<!-- /react-text --><!-- react-text: 291 --><!-- /react-text --><!-- react-text: 292 -->&nbsp;<!-- /react-text --><!-- react-text: 293 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="31.306604523065516" label="[object Object]">31.3%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">21</td><td value="Merge Two Sorted Lists" label="[object Object]"><div><a href="https://leetcode.com/problems/merge-two-sorted-lists">Merge Two Sorted Lists</a><!-- react-text: 305 -->&nbsp;<!-- /react-text --><!-- react-text: 306 --><!-- /react-text --><!-- react-text: 307 -->&nbsp;<!-- /react-text --><!-- react-text: 308 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="37.285707810162734" label="[object Object]">37.3%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">22</td><td value="Generate Parentheses" label="[object Object]"><div><a href="https://leetcode.com/problems/generate-parentheses">Generate Parentheses</a><!-- react-text: 320 -->&nbsp;<!-- /react-text --><!-- react-text: 321 --><!-- /react-text --><!-- react-text: 322 -->&nbsp;<!-- /react-text --><!-- react-text: 323 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="40.46273828281335" label="[object Object]">40.5%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">23</td><td value="Merge k Sorted Lists" label="[object Object]"><div><a href="https://leetcode.com/problems/merge-k-sorted-lists">Merge k Sorted Lists</a><!-- react-text: 335 -->&nbsp;<!-- /react-text --><!-- react-text: 336 --><!-- /react-text --><!-- react-text: 337 -->&nbsp;<!-- /react-text --><!-- react-text: 338 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="25.22170780957232" label="[object Object]">25.2%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">24</td><td value="Swap Nodes in Pairs" label="[object Object]"><div><a href="https://leetcode.com/problems/swap-nodes-in-pairs">Swap Nodes in Pairs</a><!-- react-text: 350 -->&nbsp;<!-- /react-text --><!-- react-text: 351 --><!-- /react-text --><!-- react-text: 352 -->&nbsp;<!-- /react-text --><!-- react-text: 353 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="36.705897857564416" label="[object Object]">36.7%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">25</td><td value="Reverse Nodes in k-Group" label="[object Object]"><div><a href="https://leetcode.com/problems/reverse-nodes-in-k-group">Reverse Nodes in k-Group</a><!-- react-text: 365 -->&nbsp;<!-- /react-text --><!-- react-text: 366 --><!-- /react-text --><!-- react-text: 367 -->&nbsp;<!-- /react-text --><!-- react-text: 368 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="29.1470259476274" label="[object Object]">29.1%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">26</td><td value="Remove Duplicates from Sorted Array" label="[object Object]"><div><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array">Remove Duplicates from Sorted Array</a><!-- react-text: 380 -->&nbsp;<!-- /react-text --><!-- react-text: 381 --><!-- /react-text --><!-- react-text: 382 -->&nbsp;<!-- /react-text --><!-- react-text: 383 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/remove-duplicates-sorted-array"><i class="fa fa-file-text"></i></a></td><td value="34.911403154482656" label="[object Object]">34.9%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">27</td><td value="Remove Element" label="[object Object]"><div><a href="https://leetcode.com/problems/remove-element">Remove Element</a><!-- react-text: 397 -->&nbsp;<!-- /react-text --><!-- react-text: 398 --><!-- /react-text --><!-- react-text: 399 -->&nbsp;<!-- /react-text --><!-- react-text: 400 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/remove-element"><i class="fa fa-file-text"></i></a></td><td value="36.117780024983645" label="[object Object]">36.1%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">28</td><td value="Implement strStr()" label="[object Object]"><div><a href="https://leetcode.com/problems/implement-strstr">Implement strStr()</a><!-- react-text: 414 -->&nbsp;<!-- /react-text --><!-- react-text: 415 --><!-- /react-text --><!-- react-text: 416 -->&nbsp;<!-- /react-text --><!-- react-text: 417 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="26.369426751592357" label="[object Object]">26.4%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">29</td><td value="Divide Two Integers" label="[object Object]"><div><a href="https://leetcode.com/problems/divide-two-integers">Divide Two Integers</a><!-- react-text: 429 -->&nbsp;<!-- /react-text --><!-- react-text: 430 --><!-- /react-text --><!-- react-text: 431 -->&nbsp;<!-- /react-text --><!-- react-text: 432 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="15.911862657723159" label="[object Object]">15.9%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">30</td><td value="Substring with Concatenation of All Words" label="[object Object]"><div><a href="https://leetcode.com/problems/substring-with-concatenation-of-all-words">Substring with Concatenation of All Words</a><!-- react-text: 444 -->&nbsp;<!-- /react-text --><!-- react-text: 445 --><!-- /react-text --><!-- react-text: 446 -->&nbsp;<!-- /react-text --><span class="fa fa-star favor">&nbsp;</span></div></td><td label="[object Object]"></td><td value="21.47389368261373" label="[object Object]">21.5%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">31</td><td value="Next Permutation" label="[object Object]"><div><a href="https://leetcode.com/problems/next-permutation">Next Permutation</a><!-- react-text: 459 -->&nbsp;<!-- /react-text --><!-- react-text: 460 --><!-- /react-text --><!-- react-text: 461 -->&nbsp;<!-- /react-text --><!-- react-text: 462 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/next-permutation"><i class="fa fa-file-text"></i></a></td><td value="27.791933867407298" label="[object Object]">27.8%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">32</td><td value="Longest Valid Parentheses" label="[object Object]"><div><a href="https://leetcode.com/problems/longest-valid-parentheses">Longest Valid Parentheses</a><!-- react-text: 476 -->&nbsp;<!-- /react-text --><!-- react-text: 477 --><!-- /react-text --><!-- react-text: 478 -->&nbsp;<!-- /react-text --><!-- react-text: 479 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="22.91247192318362" label="[object Object]">22.9%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">33</td><td value="Search in Rotated Sorted Array" label="[object Object]"><div><a href="https://leetcode.com/problems/search-in-rotated-sorted-array">Search in Rotated Sorted Array</a><!-- react-text: 491 -->&nbsp;<!-- /react-text --><!-- react-text: 492 --><!-- /react-text --><!-- react-text: 493 -->&nbsp;<!-- /react-text --><!-- react-text: 494 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="31.460058766495695" label="[object Object]">31.5%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">34</td><td value="Search for a Range" label="[object Object]"><div><a href="https://leetcode.com/problems/search-for-a-range">Search for a Range</a><!-- react-text: 506 -->&nbsp;<!-- /react-text --><!-- react-text: 507 --><!-- /react-text --><!-- react-text: 508 -->&nbsp;<!-- /react-text --><!-- react-text: 509 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="30.43388902236747" label="[object Object]">30.4%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">35</td><td value="Search Insert Position" label="[object Object]"><div><a href="https://leetcode.com/problems/search-insert-position">Search Insert Position</a><!-- react-text: 521 -->&nbsp;<!-- /react-text --><!-- react-text: 522 --><!-- /react-text --><!-- react-text: 523 -->&nbsp;<!-- /react-text --><!-- react-text: 524 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="38.567690102844374" label="[object Object]">38.6%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">36</td><td value="Valid Sudoku" label="[object Object]"><div><a href="https://leetcode.com/problems/valid-sudoku">Valid Sudoku</a><!-- react-text: 536 -->&nbsp;<!-- /react-text --><!-- react-text: 537 --><!-- /react-text --><!-- react-text: 538 -->&nbsp;<!-- /react-text --><!-- react-text: 539 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="33.00846869359989" label="[object Object]">33.0%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">37</td><td value="Sudoku Solver" label="[object Object]"><div><a href="https://leetcode.com/problems/sudoku-solver">Sudoku Solver</a><!-- react-text: 551 -->&nbsp;<!-- /react-text --><!-- react-text: 552 --><!-- /react-text --><!-- react-text: 553 -->&nbsp;<!-- /react-text --><!-- react-text: 554 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="27.168477478773923" label="[object Object]">27.2%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">38</td><td value="Count and Say" label="[object Object]"><div><a href="https://leetcode.com/problems/count-and-say">Count and Say</a><!-- react-text: 566 -->&nbsp;<!-- /react-text --><!-- react-text: 567 --><!-- /react-text --><!-- react-text: 568 -->&nbsp;<!-- /react-text --><!-- react-text: 569 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="31.56945242841942" label="[object Object]">31.6%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">39</td><td value="Combination Sum" label="[object Object]"><div><a href="https://leetcode.com/problems/combination-sum">Combination Sum</a><!-- react-text: 581 -->&nbsp;<!-- /react-text --><!-- react-text: 582 --><!-- /react-text --><!-- react-text: 583 -->&nbsp;<!-- /react-text --><!-- react-text: 584 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="34.38674033149171" label="[object Object]">34.4%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">40</td><td value="Combination Sum II" label="[object Object]"><div><a href="https://leetcode.com/problems/combination-sum-ii">Combination Sum II</a><!-- react-text: 596 -->&nbsp;<!-- /react-text --><!-- react-text: 597 --><!-- /react-text --><!-- react-text: 598 -->&nbsp;<!-- /react-text --><!-- react-text: 599 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="30.196592940009708" label="[object Object]">30.2%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">41</td><td value="First Missing Positive" label="[object Object]"><div><a href="https://leetcode.com/problems/first-missing-positive">First Missing Positive</a><!-- react-text: 611 -->&nbsp;<!-- /react-text --><!-- react-text: 612 --><!-- /react-text --><!-- react-text: 613 -->&nbsp;<!-- /react-text --><!-- react-text: 614 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="24.690853796466183" label="[object Object]">24.7%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">42</td><td value="Trapping Rain Water" label="[object Object]"><div><a href="https://leetcode.com/problems/trapping-rain-water">Trapping Rain Water</a><!-- react-text: 626 -->&nbsp;<!-- /react-text --><!-- react-text: 627 --><!-- /react-text --><!-- react-text: 628 -->&nbsp;<!-- /react-text --><!-- react-text: 629 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="34.42711460125468" label="[object Object]">34.4%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">43</td><td value="Multiply Strings" label="[object Object]"><div><a href="https://leetcode.com/problems/multiply-strings">Multiply Strings</a><!-- react-text: 641 -->&nbsp;<!-- /react-text --><!-- react-text: 642 --><!-- /react-text --><!-- react-text: 643 -->&nbsp;<!-- /react-text --><!-- react-text: 644 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="25.258354064952997" label="[object Object]">25.3%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">44</td><td value="Wildcard Matching" label="[object Object]"><div><a href="https://leetcode.com/problems/wildcard-matching">Wildcard Matching</a><!-- react-text: 656 -->&nbsp;<!-- /react-text --><!-- react-text: 657 --><!-- /react-text --><!-- react-text: 658 -->&nbsp;<!-- /react-text --><!-- react-text: 659 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="18.56553393701131" label="[object Object]">18.6%</td><td value="[object Object]" label="[object Object]">Hard</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">104</td><td value="Maximum Depth of Binary Tree" label="[object Object]"><div><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree">Maximum Depth of Binary Tree</a><!-- react-text: 671 -->&nbsp;<!-- /react-text --><!-- react-text: 672 --><!-- /react-text --><!-- react-text: 673 -->&nbsp;<!-- /react-text --><!-- react-text: 674 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="50.02830839243213" label="[object Object]">50.0%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">136</td><td value="Single Number" label="[object Object]"><div><a href="https://leetcode.com/problems/single-number">Single Number</a><!-- react-text: 686 -->&nbsp;<!-- /react-text --><!-- react-text: 687 --><!-- /react-text --><!-- react-text: 688 -->&nbsp;<!-- /react-text --><!-- react-text: 689 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="52.03186526548118" label="[object Object]">52.0%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">226</td><td value="Invert Binary Tree" label="[object Object]"><div><a href="https://leetcode.com/problems/invert-binary-tree">Invert Binary Tree</a><!-- react-text: 701 -->&nbsp;<!-- /react-text --><!-- react-text: 702 --><!-- /react-text --><!-- react-text: 703 -->&nbsp;<!-- /react-text --><!-- react-text: 704 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/invert-binary-tree"><i class="fa fa-file-text"></i></a></td><td value="48.77189005383962" label="[object Object]">48.8%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">258</td><td value="Add Digits" label="[object Object]"><div><a href="https://leetcode.com/problems/add-digits">Add Digits</a><!-- react-text: 718 -->&nbsp;<!-- /react-text --><!-- react-text: 719 --><!-- /react-text --><!-- react-text: 720 -->&nbsp;<!-- /react-text --><!-- react-text: 721 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="49.854031920864585" label="[object Object]">49.9%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">283</td><td value="Move Zeroes" label="[object Object]"><div><a href="https://leetcode.com/problems/move-zeroes">Move Zeroes</a><!-- react-text: 733 -->&nbsp;<!-- /react-text --><!-- react-text: 734 --><!-- /react-text --><!-- react-text: 735 -->&nbsp;<!-- /react-text --><!-- react-text: 736 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/move-zeroes"><i class="fa fa-file-text"></i></a></td><td value="46.7176604081213" label="[object Object]">46.7%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">292</td><td value="Nim Game" label="[object Object]"><div><a href="https://leetcode.com/problems/nim-game">Nim Game</a><!-- react-text: 750 -->&nbsp;<!-- /react-text --><!-- react-text: 751 --><!-- /react-text --><!-- react-text: 752 -->&nbsp;<!-- /react-text --><!-- react-text: 753 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/nim-game"><i class="fa fa-file-text"></i></a></td><td value="54.32460863211678" label="[object Object]">54.3%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">326</td><td value="Power of Three" label="[object Object]"><div><a href="https://leetcode.com/problems/power-of-three">Power of Three</a><!-- react-text: 767 -->&nbsp;<!-- /react-text --><!-- react-text: 768 --><!-- /react-text --><!-- react-text: 769 -->&nbsp;<!-- /react-text --><!-- react-text: 770 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/power-of-three"><i class="fa fa-file-text"></i></a></td><td value="38.77230265196794" label="[object Object]">38.8%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">328</td><td value="Odd Even Linked List" label="[object Object]"><div><a href="https://leetcode.com/problems/odd-even-linked-list">Odd Even Linked List</a><!-- react-text: 784 -->&nbsp;<!-- /react-text --><!-- react-text: 785 --><!-- /react-text --><!-- react-text: 786 -->&nbsp;<!-- /react-text --><!-- react-text: 787 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/odd-even-linked-list"><i class="fa fa-file-text"></i></a></td><td value="41.04200212408784" label="[object Object]">41.0%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">344</td><td value="Reverse String" label="[object Object]"><div><a href="https://leetcode.com/problems/reverse-string">Reverse String</a><!-- react-text: 801 -->&nbsp;<!-- /react-text --><!-- react-text: 802 --><!-- /react-text --><!-- react-text: 803 -->&nbsp;<!-- /react-text --><!-- react-text: 804 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="58.05197141978211" label="[object Object]">58.1%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">374</td><td value="Guess Number Higher or Lower" label="[object Object]"><div><a href="https://leetcode.com/problems/guess-number-higher-or-lower">Guess Number Higher or Lower</a><!-- react-text: 816 -->&nbsp;<!-- /react-text --><!-- react-text: 817 --><!-- /react-text --><!-- react-text: 818 -->&nbsp;<!-- /react-text --><!-- react-text: 819 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/guess-number-higher-or-lower"><i class="fa fa-file-text"></i></a></td><td value="32.5808934912712" label="[object Object]">32.6%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">376</td><td value="Wiggle Subsequence" label="[object Object]"><div><a href="https://leetcode.com/problems/wiggle-subsequence">Wiggle Subsequence</a><!-- react-text: 833 -->&nbsp;<!-- /react-text --><!-- react-text: 834 --><!-- /react-text --><!-- react-text: 835 -->&nbsp;<!-- /react-text --><!-- react-text: 836 --><!-- /react-text --></div></td><td label="[object Object]"><a href="https://leetcode.com/articles/wiggle-subsequence"><i class="fa fa-file-text"></i></a></td><td value="34.308934308934305" label="[object Object]">34.3%</td><td value="[object Object]" label="[object Object]">Medium</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">383</td><td value="Ransom Note" label="[object Object]"><div><a href="https://leetcode.com/problems/ransom-note">Ransom Note</a><!-- react-text: 850 -->&nbsp;<!-- /react-text --><!-- react-text: 851 --><!-- /react-text --><!-- react-text: 852 -->&nbsp;<!-- /react-text --><!-- react-text: 853 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="45.311138541969214" label="[object Object]">45.3%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">389</td><td value="Find the Difference" label="[object Object]"><div><a href="https://leetcode.com/problems/find-the-difference">Find the Difference</a><!-- react-text: 865 -->&nbsp;<!-- /react-text --><!-- react-text: 866 --><!-- /react-text --><!-- react-text: 867 -->&nbsp;<!-- /react-text --><!-- react-text: 868 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="49.79903469384323" label="[object Object]">49.8%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">404</td><td value="Sum of Left Leaves" label="[object Object]"><div><a href="https://leetcode.com/problems/sum-of-left-leaves">Sum of Left Leaves</a><!-- react-text: 880 -->&nbsp;<!-- /react-text --><!-- react-text: 881 --><!-- /react-text --><!-- react-text: 882 -->&nbsp;<!-- /react-text --><!-- react-text: 883 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="45.57770466421521" label="[object Object]">45.6%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr><tr><td value="ac" label="[object Object]"><span class="text-success fa fa-check"></span></td><td label="[object Object]">409</td><td value="Longest Palindrome" label="[object Object]"><div><a href="https://leetcode.com/problems/longest-palindrome">Longest Palindrome</a><!-- react-text: 895 -->&nbsp;<!-- /react-text --><!-- react-text: 896 --><!-- /react-text --><!-- react-text: 897 -->&nbsp;<!-- /react-text --><!-- react-text: 898 --><!-- /react-text --></div></td><td label="[object Object]"></td><td value="44.1567497210859" label="[object Object]">44.2%</td><td value="[object Object]" label="[object Object]">Easy</td><td label="[object Object]"></td></tr></tbody><tbody class="reactable-pagination"><tr><td colspan="7"><span class="row-selector"><select class="form-control"><option value="20">20</option><option value="50" selected="selected">50</option><option value="100">100</option><option value="9007199254740991">all</option></select><!-- react-text: 912 -->rows per page.<!-- /react-text --></span></td></tr></tbody></table></div></div></div></div>
+    </div>
+    <div class="col-md-3 blog-sidebar">
+      <div class="row sidebar-module">
+  <div class="col-md-offset-2 col-md-10">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-danger">
+        <strong>
+          <span class="glyphicon glyphicon-heart"></span>
+          <span>&nbsp;Contribute</span>
+        </strong>
+      </li>
+      <li class="list-group-item">
+        <a style="white-space: normal;" class="btn btn-success btn-md qa-ask-btn btn-block" href="https://leetcode.com/library/application/">
+          Post an Interview Question
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <div class="row sidebar-module">
+  <div class="col-md-offset-2 col-md-10">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-danger">
+        <strong>
+          <span class="glyphicon glyphicon-floppy-disk"></span>
+          <span>&nbsp;Sessions</span>
+        </strong>
+      </li>
+      <li class="list-group-item">
+        <a style="white-space: normal;" class="btn btn-success btn-md qa-ask-btn btn-block" href="https://leetcode.com/session/">Manage Sessions</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      
+        <div class="row sidebar-module">
+  <div class="col-md-offset-2 col-md-10">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-warning">
+        <strong>
+          <i class="fa fa-building"></i>
+          <span>&nbsp;&nbsp;Company</span>
+        </strong>
+      </li>
+      
+        
+          <a href="https://leetcode.com/company/linkedin/" class="list-group-item">
+            <span class="badge">42</span>
+            <small>LinkedIn</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/google/" class="list-group-item">
+            <span class="badge">136</span>
+            <small>Google</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/uber/" class="list-group-item">
+            <span class="badge">45</span>
+            <small>Uber</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/airbnb/" class="list-group-item">
+            <span class="badge">23</span>
+            <small>Airbnb</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/facebook/" class="list-group-item">
+            <span class="badge">86</span>
+            <small>Facebook</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/twitter/" class="list-group-item">
+            <span class="badge">29</span>
+            <small>Twitter</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/zenefits/" class="list-group-item">
+            <span class="badge">21</span>
+            <small>Zenefits</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/amazon/" class="list-group-item">
+            <span class="badge">46</span>
+            <small>Amazon</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/microsoft/" class="list-group-item">
+            <span class="badge">80</span>
+            <small>Microsoft</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/snapchat/" class="list-group-item">
+            <span class="badge">23</span>
+            <small>Snapchat</small>
+          </a>
+        
+      
+        
+      
+        
+          <a href="https://leetcode.com/company/apple/" class="list-group-item">
+            <span class="badge">29</span>
+            <small>Apple</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/yahoo/" class="list-group-item">
+            <span class="badge">11</span>
+            <small>Yahoo</small>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://leetcode.com/company/dropbox/" class="list-group-item">
+            <span class="badge">8</span>
+            <small>Dropbox</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/epic-systems/" class="list-group-item">
+            <span class="badge">1</span>
+            <small>Epic Systems</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/bloomberg/" class="list-group-item">
+            <span class="badge">59</span>
+            <small>Bloomberg</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/palantir/" class="list-group-item">
+            <span class="badge">7</span>
+            <small>Palantir</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/two-sigma/" class="list-group-item">
+            <span class="badge">4</span>
+            <small>Two Sigma</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/yelp/" class="list-group-item">
+            <span class="badge">15</span>
+            <small>Yelp</small>
+          </a>
+        
+      
+        
+      
+        
+          <a href="https://leetcode.com/company/pocket-gems/" class="list-group-item">
+            <span class="badge">11</span>
+            <small>Pocket Gems</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/adobe/" class="list-group-item">
+            <span class="badge">12</span>
+            <small>Adobe</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/hulu/" class="list-group-item">
+            <span class="badge">1</span>
+            <small>Hulu</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/pinterest/" class="list-group-item">
+            <span class="badge">1</span>
+            <small>Pinterest</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/baidu/" class="list-group-item">
+            <span class="badge">3</span>
+            <small>Baidu</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/ebay/" class="list-group-item">
+            <span class="badge">1</span>
+            <small>eBay</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/company/aetion/" class="list-group-item">
+            <span class="badge">1</span>
+            <small>Aetion</small>
+          </a>
+        
+      
+    </ul>
+  </div>
+</div>
+
+      
+      
+        <div class="row sidebar-module">
+  <div class="col-md-offset-2 col-md-10">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-warning">
+        <strong>
+          <span class="glyphicon glyphicon-tags"></span>
+          <span>&nbsp;&nbsp;Tag</span>
+        </strong>
+      </li>
+      
+        
+          <a href="https://leetcode.com/tag/array/" class="list-group-item">
+            <span class="badge">78</span>
+            <small>Array</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/hash-table/" class="list-group-item">
+            <span class="badge">47</span>
+            <small>Hash Table</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/linked-list/" class="list-group-item">
+            <span class="badge">26</span>
+            <small>Linked List</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/math/" class="list-group-item">
+            <span class="badge">52</span>
+            <small>Math</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/two-pointers/" class="list-group-item">
+            <span class="badge">32</span>
+            <small>Two Pointers</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/string/" class="list-group-item">
+            <span class="badge">52</span>
+            <small>String</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/binary-search/" class="list-group-item">
+            <span class="badge">33</span>
+            <small>Binary Search</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/divide-and-conquer/" class="list-group-item">
+            <span class="badge">12</span>
+            <small>Divide and Conquer</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/dynamic-programming/" class="list-group-item">
+            <span class="badge">56</span>
+            <small>Dynamic Programming</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/backtracking/" class="list-group-item">
+            <span class="badge">34</span>
+            <small>Backtracking</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/stack/" class="list-group-item">
+            <span class="badge">23</span>
+            <small>Stack</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/heap/" class="list-group-item">
+            <span class="badge">14</span>
+            <small>Heap</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/greedy/" class="list-group-item">
+            <span class="badge">15</span>
+            <small>Greedy</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/sort/" class="list-group-item">
+            <span class="badge">16</span>
+            <small>Sort</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/bit-manipulation/" class="list-group-item">
+            <span class="badge">23</span>
+            <small>Bit Manipulation</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/tree/" class="list-group-item">
+            <span class="badge">45</span>
+            <small>Tree</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/depth-first-search/" class="list-group-item">
+            <span class="badge">35</span>
+            <small>Depth-first Search</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/breadth-first-search/" class="list-group-item">
+            <span class="badge">21</span>
+            <small>Breadth-first Search</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/union-find/" class="list-group-item">
+            <span class="badge">6</span>
+            <small>Union Find</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/graph/" class="list-group-item">
+            <span class="badge">9</span>
+            <small>Graph</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/design/" class="list-group-item">
+            <span class="badge">26</span>
+            <small>Design</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/topological-sort/" class="list-group-item">
+            <span class="badge">4</span>
+            <small>Topological Sort</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/trie/" class="list-group-item">
+            <span class="badge">6</span>
+            <small>Trie</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/binary-indexed-tree/" class="list-group-item">
+            <span class="badge">4</span>
+            <small>Binary Indexed Tree</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/segment-tree/" class="list-group-item">
+            <span class="badge">4</span>
+            <small>Segment Tree</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/binary-search-tree/" class="list-group-item">
+            <span class="badge">4</span>
+            <small>Binary Search Tree</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/recursion/" class="list-group-item">
+            <span class="badge">2</span>
+            <small>Recursion</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/brainteaser/" class="list-group-item">
+            <span class="badge">2</span>
+            <small>Brainteaser</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/memoization/" class="list-group-item">
+            <span class="badge">1</span>
+            <small>Memoization</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/queue/" class="list-group-item">
+            <span class="badge">3</span>
+            <small>Queue</small>
+          </a>
+        
+      
+        
+          <a href="https://leetcode.com/tag/reservoir-sampling/" class="list-group-item">
+            <span class="badge">2</span>
+            <small>Reservoir Sampling</small>
+          </a>
+        
+      
+    </ul>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+
+</div>
+
+    </div>
+
+    
+    <footer class="site-footer" style="margin-top: -136px;">
+      <div class="container">
+        <hr>
+        <p class="text-center">
+          <a href="https://leetcode.com/faq/">Frequently Asked Questions</a> |
+          <a href="https://leetcode.com/tos/">Terms of Service</a>
+        </p>
+        <p class="text-center">
+          <iframe class="iubenda-ibadge" scrolling="no" allowtransparency="true" style="width:105px; height:22px;" frameborder="0"></iframe>
+        </p>
+        <p class="text-center">Copyright © 2016 LeetCode</p>
+      </div>
+    </footer>
+    
+
+    <a href="mailto:admin@leetcode.com?subject=Feedback" id="chat-link" target="_blank">
+    <i class="glyphicon glyphicon-envelope"></i>Send Feedback</a>
+
+    <script>
+      (function($, w, d){
+        var loader = function () {
+          var s = d.createElement("script"),
+              tag = d.getElementsByTagName("script")[0];
+          s.src = "//cdn.iubenda.com/iubenda.js";
+          tag.parentNode.insertBefore(s,tag);
+          s.onload = setFooterStyles;
+        };
+        if (w.addEventListener) {
+          w.addEventListener("load", loader, false);
+        } else if (w.attachEvent) {
+          w.attachEvent("onload", loader);
+        } else { w.onload = loader; }
+
+        $(function() {
+          $('#navbar-right img').addClass('img-rounded');
+          setFooterStyles();
+        });
+
+        function setFooterStyles() {
+          var $footer = $('.site-footer'),
+              height = $footer.outerHeight();
+          $footer.css('margin-top', -height);
+          $('.content-wrapper').css('padding-bottom', height);
+        }
+      }(jQuery, window, document));
+    </script>
+
+    <script src="Problems%20%7C%20LeetCode%20OJ_files/bootstrap.js"></script>
+    <script src="Problems%20%7C%20LeetCode%20OJ_files/bootstrap-table.js"></script>
+    <script type="text/javascript" src="Problems%20%7C%20LeetCode%20OJ_files/7c8e0568794a.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o)
+  ,m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a
+  ,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'
+  );
+  ga('create', 'UA-6849839-6', 'leetcode.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+    
+<script>
+var pageData = {
+  announcementId: "82",
+  isAuthenticated: "True" == "True",
+  congratulation: "False" == "True"
+};
+</script>
+<script type="text/javascript" src="Problems%20%7C%20LeetCode%20OJ_files/7a90c20a1c24.js"></script>
+<script src="Problems%20%7C%20LeetCode%20OJ_files/react-vendor.js"></script>
+<script src="Problems%20%7C%20LeetCode%20OJ_files/question_list.js"></script>
+
+    <script>try { ace.config.set("basePath", "/static/ace/src-noconflict/") } catch(err) {}</script>
+  
+
+</body></html>
